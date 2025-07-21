@@ -1,15 +1,17 @@
 INFO:  latexindent version 3.24.4, 2024-07-18, a script to indent .tex files
-       latexindent lives here: /home/tituslim/.local/share/nvim/mason/packages/latexindent/
-       Sun Jun  8 13:23:03 2025
+       latexindent lives here: /home/hpenvy/.local/share/nvim/mason/packages/latexindent/
+       Mon Jul 21 21:14:07 2025
        Reading input from STDIN
 INFO:  Processing switches:
        -m|--modifylinebreaks: modify line breaks
 INFO:  Directory for backup files and log file indent.log:
        .
 INFO:  YAML settings read: defaultSettings.yaml
-       Reading defaultSettings.yaml from /home/tituslim/.local/share/nvim/mason/packages/latexindent/defaultSettings.yaml
+       Reading defaultSettings.yaml from /home/hpenvy/.local/share/nvim/mason/packages/latexindent/defaultSettings.yaml
+       Reading defaultSettings.yaml (2nd attempt) from /home/hpenvy/.local/share/nvim/mason/packages/latexindent/../../texmf-dist/scripts/latexindent/defaultSettings.yaml
+       and then, if necessary, /home/hpenvy/.local/share/nvim/mason/packages/latexindent/LatexIndent/defaultSettings.yaml
 INFO:  YAML reading settings
-       Home directory is /home/tituslim
+       Home directory is /home/hpenvy
        latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
        see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
 INFO:  Phase 1: searching for objects

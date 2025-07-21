@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
 
 \usepackage[letterpaper, top=0.8in, bottom=1in, left=1in, right=1in, heightrounded]{geometry}
 \usepackage{titling}
@@ -25,9 +26,67 @@
 \tableofcontents
 \newpage
 
-\section{Introduction}
+\section*{Introduction}
 
 This paper consists of many different pre-university topics primarily from Cambridge A-Level H2 and H3 mathematics such as Fourier, Maclaurin Series, Conics, Equation of Planes etc.
-It covers the derivation and applications of the diferent topics. Some examples are also given.
+It covers the derivation and applications of the different topics. Some examples are also given.
+
+\section{Sequences and Series}
+
+Consider the following infinite series of elements:
+\[
+	\frac{1}{2}, \frac{1}{4}, \frac{1}{8},\dots,\frac{1}{2^{i}},\dots
+\]
+
+Can we assign this infinite sum to a numerical value? Indeed, we can. We must first understand what are \textbf{series} and \textbf{sequences}.
+
+\subsection{Sequence}
+
+A sequence is any number of elements arranged in a specific order.
+
+\textbf{Example 1.} An infinite sequence of ascending odd numbers.
+\[
+	1, 3, 5, 7, \dots
+\]
+Sequences can be both infinite and finite. An example of a finite sequence is:
+\[
+	2, 4, 8, 16, \dots, n
+\]
+where $n$ is the final element in the sequence.
+
+More formally, the algebraic notation for a sequence is expressed as:
+\[
+	a_1, a_2, a_3, \dots, a_n
+\]
+where $a_1$ is the first term, $a_2$ is the second term, and $a_n$ is the $n^{th}$ term.
+
+\subsection{Series}
+
+A series is the total sum of all elements in a sequence. In the first section, we posed the question of obtaining a numerical value from an infinite sum. What we are really asking is: \textit{How do we evaluate a series?}
+
+With the initial sequence in \textbf{Section 1}, let's first change it to a finite sequence. We can rewrite it into this series:
+\[
+	S_{n} = \frac{1}{2} + \frac{1}{4} + \frac{1}{6} + \dots + \frac{1}{2^{n}}
+\]
+
+We can also write the above in summation notation:
+\[
+	S_{n} = \displaystyle\sum_{k=1}^{n}\frac{1}{2^{k}}
+\]
+This describes the sum of elements of $\displaystyle\frac{1}{2^{n}}$ where $k=1$ to $k=n$.
+
+Suppose we want to find the sum of 10 elements in the series. We can write it as:
+\begin{align*}
+	S_{10} & = \displaystyle\sum_{k=1}^{10}\frac{1}{2^{k}}                                    \\
+	       & = \frac{1}{2^{1}} + \frac{1}{2^{2}} + \frac{1}{2^{3}} + \dots + \frac{1}{2^{10}} \\
+         & = 0.99902
+\end{align*}
+In the next sections, we will explore the different types of series.
+
+\subsection{Arithmetic Progression}
+
+
+
+\subsection{Geometric Progression}
 
 \end{document}
