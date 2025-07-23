@@ -58,7 +58,7 @@ More formally, the algebraic notation for a sequence is expressed as:
 \[
 	a_1, a_2, a_3, \dots, a_n
 \]
-where $a_1$ is the first term, $a_2$ is the second term, and $a_n$ is the $n^{th}$ term.
+where $a_1$ is the first term, $a_2$ is the second term, and $a_n$ is the $n$-th term.
 
 \subsection{Series}
 
@@ -79,14 +79,97 @@ Suppose we want to find the sum of 10 elements in the series. We can write it as
 \begin{align*}
 	S_{10} & = \displaystyle\sum_{k=1}^{10}\frac{1}{2^{k}}                                    \\
 	       & = \frac{1}{2^{1}} + \frac{1}{2^{2}} + \frac{1}{2^{3}} + \dots + \frac{1}{2^{10}} \\
-         & = 0.99902
+	       & = 0.99902
 \end{align*}
-In the next sections, we will explore the different types of series.
+In the next sections, we will explore the different types of sequences and series.
 
 \subsection{Arithmetic Progression}
 
+The first type of sequence is known as an \textbf{arithmetic progression}.
 
+\textbf{Example 2.} Consider the following sequence:
+\[
+	2, 5, 8, 11, \dots
+\]
+To obtain the above sequence, we start with the first term and add a fixed value to each term successively.
+\[
+	2, 2 + 3 = 5, 5 + 3 = 8, 8 + 3 = 11, \dots
+\]
+This fixed value is called the \textbf{common difference}. In the above example, the common difference would be 3.
+
+More formally, an \textbf{arithmetic progression} or \textbf{AP} is a sequence whereby the difference between the preceding and succeeding terms is common.
+In algebraic notation, it can be written as:
+\[
+	a, a + d, a + 2d, a + 3d, \dots, a + (n-1)d
+\]
+where $a$ is the first term, $d$ is the common difference, and $n$ is the number of terms in the sequence.
+
+From the above, we can observe that the $n$-th term is:
+\[
+	a_n = a + (n-1)d
+\]
+
+\subsubsection{Sum of AP Series}
+
+An AP series is simply the total sum of terms in a given arithmetic progression. For a general arithmetic progression:
+\[
+	a, (a + d), (a + 2d), \dots, (\ell - 2d), (\ell - d), \ell
+\]
+where $a$ is the first term, $d$ is the common difference and $\ell$ is the $n$-th term.
+
+The AP series is written as:
+\[
+	S_n = a + (a + d) + (a + 2d) + \dots + (\ell - 2d) + (\ell - d) + \ell
+\]
+To derive a general formula for the AP series, let's first reverse the order of $S_n$:
+\[
+	S_n = \ell + (\ell - d) + (\ell - 2d) + \dots + (a + 2d) + (a + d) + a
+\]
+Then, let's add the original AP series to the reverse AP series by vertically summing each term.
+\[
+	2S_n = (a + \ell) + (a + \ell) + (a + \ell) + \dots + (a + \ell) + (a + \ell) + (a + \ell)
+\]
+Notice how all the terms have become $(a + \ell)$. There are now $n$ number of $(a + \ell)$ terms. Now, we can make $S_n$ the subject:
+\[
+	S_n = \frac{1}{2}n(a + \ell)
+\]
+As seen in the previous section, the $n-th$ term, $\ell$, can also be written as $a + (n - 1)d$.
+\textbf{Derivation.} Hence, the general formula for the sum of any AP series is:
+\[
+	S_n = \frac{1}{2}n(2a + (n-1)d)
+\]
 
 \subsection{Geometric Progression}
+
+The second type of sequence is known as a \textbf{geometric progression}.
+
+\textbf{Example 3.} Consider the following sequence:
+\[
+	2, 6, 18, 54, \dots
+\]
+To obtain the above sequence, we start with the first term and multiply it by a fixed value to each term successively.
+\[
+	2, 2 \times 3 = 6, 6 \times 3 = 18, 18 \times 3 = 54, \dots
+\]
+This fixed value is called the \textbf{common ratio}. In the above example, the common ratio would be 3.
+
+More formally, a \textbf{geometric progression} or \textbf{GP} is a sequence whereby each term is produced by multiplying each preceding term by a constant value. In algebraic notation, it can be written as:
+\[
+  a, ar, ar^2, ar^3, \dots, ar^{n-1}
+\]
+where $a$ is the first term, $r$ is the common ratio, and $n$ is the number of terms in the sequence.
+
+From the above, we can observe that the $n$-th term is:
+\[
+  a_n = ar^{n-1}
+\]
+
+\subsubsection{Sum of GP Series}
+
+Similar to a series, a GP Series is simply the total sum of terms in a given geometric progression. For a general geometric progression, its GP series can be written as:
+\[
+  S_n = a + ar + ar^2 + ar^3 + \dots + ar^{n-1}
+\]
+
 
 \end{document}
