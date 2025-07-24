@@ -81,7 +81,17 @@ Suppose we want to find the sum of 10 elements in the series. We can write it as
 	       & = \frac{1}{2^{1}} + \frac{1}{2^{2}} + \frac{1}{2^{3}} + \dots + \frac{1}{2^{10}} \\
 	       & = 0.99902
 \end{align*}
-In the next sections, we will explore the different types of sequences and series.
+
+\subsubsection{Convergence and Divergence of Series}
+A \textbf{convergent} series is any series where the sum converges to a numerical value. For a given series
+\[
+  \displaystyle\sum_{n=1}^{\infty}a_n
+\]
+we say it is convergent if the series converges to the sum, $S \in \mathbb{R}$, when the sequence of partial sums
+\[
+  S_n = \displaystyle\sum_{k=1}^{n}a_k
+\]
+converges to $S$ as $n \rightarrow \infty$. Otherwise, the series is \textbf{divergent}.
 
 \subsection{Arithmetic Progression}
 
@@ -133,11 +143,19 @@ Notice how all the terms have become $(a + \ell)$. There are now $n$ number of $
 \[
 	S_n = \frac{1}{2}n(a + \ell)
 \]
-As seen in the previous section, the $n-th$ term, $\ell$, can also be written as $a + (n - 1)d$.
+As seen in the previous section, the $n-th$ term, $\ell$, can also be written as $a + (n - 1)d$.  \\
 \textbf{Derivation.} Hence, the general formula for the sum of any AP series is:
 \[
 	S_n = \frac{1}{2}n(2a + (n-1)d)
 \]
+
+\subsubsection{Divergence of AP Series}
+
+All AP series with common difference, $d \neq 0$ are divergent. For any AP series,  \\
+If $d > 0$, then the sum of any AP series diverges to $+\infty$ as $n \rightarrow \infty$.  \\  
+If $d < 0$, then the sum of any AP series diverges to $-\infty$ as $n \rightarrow \infty$.  \\ 
+If $d = 0$ and $a \neq 0$, then the sum of any AP series diverges to $+-\infty$ as $n \rightarrow$ depending on the sign of $a$. \\
+If $d = 0$ and $a = 0$, then the sum of any AP series is $0$.
 
 \subsection{Geometric Progression}
 
@@ -155,21 +173,35 @@ This fixed value is called the \textbf{common ratio}. In the above example, the 
 
 More formally, a \textbf{geometric progression} or \textbf{GP} is a sequence whereby each term is produced by multiplying each preceding term by a constant value. In algebraic notation, it can be written as:
 \[
-  a, ar, ar^2, ar^3, \dots, ar^{n-1}
+	a, ar, ar^2, ar^3, \dots, ar^{n-1}
 \]
 where $a$ is the first term, $r$ is the common ratio, and $n$ is the number of terms in the sequence.
 
 From the above, we can observe that the $n$-th term is:
 \[
-  a_n = ar^{n-1}
+	a_n = ar^{n-1}
 \]
 
 \subsubsection{Sum of GP Series}
 
 Similar to a series, a GP Series is simply the total sum of terms in a given geometric progression. For a general geometric progression, its GP series can be written as:
 \[
-  S_n = a + ar + ar^2 + ar^3 + \dots + ar^{n-1}
+	S_n = a + ar + ar^2 + ar^3 + \dots + ar^{n-1}
 \]
+We can evaluate the series by multiplying both sides by $r$ and then subtracting:
+\begin{align*}
+	rS_n       & = ar + ar^2 + ar^3 + ar^4 + \dots + ar^{n-1} + ar^n        \\
+	S_n - rS_n & = a - ar^n                                                 \\
+	S_n(1 - r) & = a - ar^n                                                 \\
+\end{align*}
+Now, we can make $S_n$ the subject.\\
+\textbf{Derivation.} Hence, the general formula for the sum of any GP series is:
+\[
+	S_n = \frac{a - ar^n}{1 - r}   \;\;\;\;   \text{for } r \neq 1
+\]
+
+\subsubsection{Convergence and Divergence of GP Series}
+A GP series can either be convergent or divergent.
 
 
 \end{document}
