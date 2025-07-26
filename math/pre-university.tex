@@ -82,17 +82,6 @@ Suppose we want to find the sum of 10 elements in the series. We can write it as
 	       & = 0.99902
 \end{align*}
 
-\subsubsection{Convergence and Divergence of Series}
-A \textbf{convergent} series is any series where the sum converges to a numerical value. For a given series
-\[
-  \displaystyle\sum_{n=1}^{\infty}a_n
-\]
-we say it is convergent if the series converges to the sum, $S \in \mathbb{R}$, when the sequence of partial sums
-\[
-  S_n = \displaystyle\sum_{k=1}^{n}a_k
-\]
-converges to $S$ as $n \rightarrow \infty$. Otherwise, the series is \textbf{divergent}.
-
 \subsection{Arithmetic Progression}
 
 The first type of sequence is known as an \textbf{arithmetic progression}.
@@ -148,12 +137,9 @@ As seen in the previous section, the $n-th$ term, $\ell$, can also be written as
 \[
 	S_n = \frac{1}{2}n(2a + (n-1)d)
 \]
-
-\subsubsection{Divergence of AP Series}
-
-All AP series with common difference, $d \neq 0$ are divergent. For any AP series,  \\
-If $d > 0$, then the sum of any AP series diverges to $+\infty$ as $n \rightarrow \infty$.  \\  
-If $d < 0$, then the sum of any AP series diverges to $-\infty$ as $n \rightarrow \infty$.  \\ 
+All AP series with common difference, $d \neq 0$ are \textbf{divergent}. For any AP series,  \\
+If $d > 0$, then the sum of any AP series diverges to $+\infty$ as $n \rightarrow \infty$.  \\
+If $d < 0$, then the sum of any AP series diverges to $-\infty$ as $n \rightarrow \infty$.  \\
 If $d = 0$ and $a \neq 0$, then the sum of any AP series diverges to $+-\infty$ as $n \rightarrow$ depending on the sign of $a$. \\
 If $d = 0$ and $a = 0$, then the sum of any AP series is $0$.
 
@@ -190,18 +176,111 @@ Similar to a series, a GP Series is simply the total sum of terms in a given geo
 \]
 We can evaluate the series by multiplying both sides by $r$ and then subtracting:
 \begin{align*}
-	rS_n       & = ar + ar^2 + ar^3 + ar^4 + \dots + ar^{n-1} + ar^n        \\
-	S_n - rS_n & = a - ar^n                                                 \\
-	S_n(1 - r) & = a - ar^n                                                 \\
+	rS_n       & = ar + ar^2 + ar^3 + ar^4 + \dots + ar^{n-1} + ar^n \\
+	S_n - rS_n & = a - ar^n                                          \\
+	S_n(1 - r) & = a - ar^n                                          \\
 \end{align*}
 Now, we can make $S_n$ the subject.\\
 \textbf{Derivation.} Hence, the general formula for the sum of any GP series is:
 \[
 	S_n = \frac{a - ar^n}{1 - r}   \;\;\;\;   \text{for } r \neq 1
 \]
+A GP series can either be \textbf{convergent} or \textbf{divergent}.
 
-\subsubsection{Convergence and Divergence of GP Series}
-A GP series can either be convergent or divergent.
+\subsection{p-Series}
+
+The \textbf{p-Series} is a type of series in the form:
+\[
+	\displaystyle\sum_{n=1}^{\infty}\frac{1}{n^p} = 1 + \frac{1}{2^p} + \frac{1}{3^p} + \dots + \frac{1}{n^p} + \dots
+\]
+where $p$ is an exponent and $p \geq 0$.
+
+Interestingly, when $p = 1$, it forms a special type of series called a \textbf{Harmonic Series}:
+\[
+	\displaystyle\sum_{n=1}^{\infty}\frac{1}{n} = 1 + \frac{1}{2} + \frac{1}{3} + \dots + \frac{1}{n} + \dots
+\]
+
+In general, a p-series converges if $p > 1$ as the partial sum grows smaller fast enough. Conversely, it diverges if $p \leq 1$.
+
+\subsection{Convergence and Divergence of Series}
+A \textbf{convergent} series is any series where the sum converges to a numerical value. For a given series
+\[
+	\displaystyle\sum_{n=1}^{\infty}a_n
+\]
+we say it is convergent if the series converges to the sum, $S \in \mathbb{R}$, if
+\[
+	\displaystyle\lim_{n\rightarrow\infty}S_n = S
+\]
+where the partial sum
+\[
+	S_n = a_1 + a_2 + a_3 + \dots + a_n = \displaystyle\sum_{k=1}^{n}a_k
+\]
+Otherwise, the series is \textbf{divergent}.
+
+Distributive and associative arithmetic laws still apply for any series.
+
+\subsubsection{Absolute Convergence}
+
+The series
+\[
+	\displaystyle\sum_{n=1}^{\infty}a_n
+\]
+converges \textbf{absolutely} if
+\[
+	\displaystyle\sum_{n=1}^{\infty}|a_n| \;\; \text{converges}
+\]
+Otherwise, it converges \textbf{conditionally} if
+\[
+	\displaystyle\sum_{n=1}^{\infty}a_n \;\; \text{converges, but } \displaystyle\sum_{n=1}^{\infty}|a_n| \;\; \text{diverges}
+\]
+
+In the next few sections, we will explore how we can test if a given series is convergent or divergent.
+
+\subsubsection{Divergence Test}
+
+The divergence test states that a series is divergent if the limit of the term $a_n \neq 0$ or does not exist.
+
+\textbf{Definition.} The series diverges if
+\begin{gather*}
+	\displaystyle\lim_{n\rightarrow\infty}a_n \neq 0  \;\;  \text{or}  \\
+	\displaystyle\lim_{n\rightarrow\infty}a_n \;\; \text{does not exist}
+\end{gather*}
+If the limit is $0$, more tests would need to be carried out to determine if the series is truly convergent.
+
+\textbf{Example 4.1} Determine if the following series $\displaystyle\sum_{n=1}^{\infty}\frac{n - 1}{n}$ is convergent or divergent.
+\begin{align*}
+	  & \displaystyle\lim_{n\rightarrow\infty}\frac{n - 1}{n}   \\
+	= & \displaystyle\lim_{n\rightarrow\infty}(1 - \frac{1}{n}) \\
+	= & \displaystyle\lim_{n\rightarrow\infty}(1 - 0)           \\
+	= & 1
+\end{align*}
+\[
+	\therefore \text{Since the limit $\neq 0$, the series is divergent}.
+\]
+
+\subsubsection{Geometric Series Test}
+
+The geometric series test applies to any geometric series in the form $\displaystyle\sum_{n=1}^{\infty}ar^{n-1}$.
+
+\textbf{Definition.} The series converges or diverges based on the following
+\[
+	\displaystyle\sum_{n=1}^{\infty}ar^{n-1} =
+	\begin{cases}
+		\displaystyle\frac{a}{1-r} & \text{for } |r| < 1    \\
+		\text{diverges}            & \text{for } |r| \geq 1
+	\end{cases}
+\]
+
+\textbf{Example 4.2} Determine if the following series $\displaystyle\sum_{n=1}^{\infty}\frac{5^{n-1}}{3^{n+1}}$ is convergent or divergent. If it converges, find the value it converges to.
+\begin{align*}
+	  & \displaystyle\sum_{n=1}^{\infty}\frac{3^{n-1}}{5^{n+1}}                   \\
+	= & \displaystyle\sum_{n=1}^{\infty}\frac{1}{25}\left(\frac{3}{5}\right)^{n-1} \\
+	= & \frac{\frac{1}{25}}{1-\frac{3}{5}}                                         \\
+	= & \frac{1}{10}
+\end{align*}
+
+\subsubsection{Comparison Test}
+
 
 
 \end{document}
