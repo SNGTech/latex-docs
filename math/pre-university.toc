@@ -10,4 +10,6 @@
 \contentsline {subsubsection}{\numberline {1.6.1}Absolute Convergence}{7}{subsubsection.1.6.1}%
 \contentsline {subsubsection}{\numberline {1.6.2}Divergence Test}{8}{subsubsection.1.6.2}%
 \contentsline {subsubsection}{\numberline {1.6.3}Geometric Series Test}{8}{subsubsection.1.6.3}%
-\contentsline {subsubsection}{\numberline {1.6.4}Comparison Test}{9}{subsubsection.1.6.4}%
+\contentsline {subsubsection}{\numberline {1.6.4}Direct Comparison Test}{9}{subsubsection.1.6.4}%
+\contentsline {subsubsection}{\numberline {1.6.5}Limit Comparison Test}{10}{subsubsection.1.6.5}%
+\contentsline {subsubsection}{\numberline {1.6.6}Integral Test}{10}{subsubsection.1.6.6}%
