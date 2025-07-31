@@ -1,15 +1,18 @@
-\contentsline {section}{\numberline {1}Sequences and Series}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Sequence}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Series}{3}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Arithmetic Progression}{3}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Sum of AP Series}{4}{subsubsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.4}Geometric Progression}{5}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {1.4.1}Sum of GP Series}{6}{subsubsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.5}p-Series}{6}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Convergence and Divergence of Series}{7}{subsection.1.6}%
-\contentsline {subsubsection}{\numberline {1.6.1}Absolute Convergence}{7}{subsubsection.1.6.1}%
-\contentsline {subsubsection}{\numberline {1.6.2}Divergence Test}{8}{subsubsection.1.6.2}%
-\contentsline {subsubsection}{\numberline {1.6.3}Geometric Series Test}{8}{subsubsection.1.6.3}%
-\contentsline {subsubsection}{\numberline {1.6.4}Direct Comparison Test}{9}{subsubsection.1.6.4}%
-\contentsline {subsubsection}{\numberline {1.6.5}Limit Comparison Test}{10}{subsubsection.1.6.5}%
-\contentsline {subsubsection}{\numberline {1.6.6}Integral Test}{10}{subsubsection.1.6.6}%
+\contentsline {section}{\numberline {1}Sequences and Series}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Sequence}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Series}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Arithmetic Progression}{4}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Sum of AP Series}{5}{subsubsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.4}Geometric Progression}{6}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Sum of GP Series}{7}{subsubsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.5}p-Series}{7}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Convergence and Divergence of Series}{8}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}Absolute Convergence}{8}{subsubsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.2}Divergence Test}{9}{subsubsection.1.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.3}Geometric Series Test}{9}{subsubsection.1.6.3}%
+\contentsline {subsubsection}{\numberline {1.6.4}Direct Comparison Test}{10}{subsubsection.1.6.4}%
+\contentsline {subsubsection}{\numberline {1.6.5}Limit Comparison Test}{11}{subsubsection.1.6.5}%
+\contentsline {subsubsection}{\numberline {1.6.6}Integral Test}{12}{subsubsection.1.6.6}%
+\contentsline {subsubsection}{\numberline {1.6.7}Alternating Series Test}{12}{subsubsection.1.6.7}%
+\contentsline {subsubsection}{\numberline {1.6.8}Ratio Test}{13}{subsubsection.1.6.8}%
+\contentsline {subsubsection}{\numberline {1.6.9}Root Test}{14}{subsubsection.1.6.9}%
