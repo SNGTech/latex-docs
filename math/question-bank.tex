@@ -1,0 +1,206 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm, cancel}
+\usepackage{hyperref}
+
+\usepackage[letterpaper, top=0.8in, bottom=1in, left=1in, right=1in, heightrounded]{geometry}
+\usepackage{titling}
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+
+\renewcommand{\baselinestretch}{1.15}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.8em}
+
+\title{Mathematics Question Bank}
+\author{\textbf{Titus Lim}}
+\date{August 2025}
+
+\begin{document}
+
+\begin{titlingpage}
+	\maketitle
+\end{titlingpage}
+
+\tableofcontents
+\newpage
+
+\section*{Introduction}
+
+This paper is a question bank on many different pre-university and university mathematics topics. Answers for each question is given. At the end of each subsection.
+
+\section{Sequences and Series}
+
+1. In a geometric series, $t_5 + t_7 = 1500$ and $t_{11}+t_{13}=187500$. Find all possible values for the first three terms.
+
+2. Given that $a, b$, and $c$ are consecutive terms in an arithmetic sequence that has distinct terms, calculate $x$ if
+\[
+	(b-c)x^2+(c-a)x+(a-b)=0
+\]
+3. Three different numbers, whose product is $125$, are $3$ consecutive terms in a geometric sequence. At the same time they are the first, third and sixth terms of an arithmetic sequence. Find these three numbers.
+
+\subsection{Solutions}
+
+1. In a geometric series, $t_5 + t_7 = 1500$ and $t_{11}+t_{13}=187500$. Find all possible values for the first three terms.
+\begin{gather*}
+	\text{Geometric Series: } \displaystyle\sum_{n=1}^{\infty}ar^{n-1}
+\end{gather*}
+\begin{align}
+	ar^{4} + ar^{6}    & = 1500                   \notag   \\
+	ar^4(1 + r^2)      & = 1500        \label{eq:qn1:line} \\
+	ar^{10} + ar^{12}  & = 187500                \notag    \\
+	ar^{10}(1 + r^{2}) & = 187500 \label{eq:qn1:line2}
+\end{align}
+\begin{gather*}
+	\text{Divide Equation } \eqref{eq:qn1:line} \text{ from Equation } \eqref{eq:qn1:line2}
+\end{gather*}
+\begin{align*}
+	\frac{ar^{10}(1+r^2)}{ar^4(1+r^2)} & = \frac{187500}{1500} \\
+	r^6                                & = 125                 \\
+	r                                  & = \sqrt{5}
+\end{align*}
+\begin{align*}
+	a                          & = \frac{1500}{r^4+r^6} \\
+	r = \sqrt{5} \Rightarrow a & = \frac{1500}{25+125}  \\
+	                           & = 10
+\end{align*}
+\begin{align*}
+	t_1 & = 10            \\
+	t_2 & = 10\sqrt{5}    \\
+	t_3 & = 10\cdot5 = 50
+\end{align*}
+
+2. Given that $a, b$, and $c$ are consecutive terms in an arithmetic sequence that has distinct terms, calculate $x$ if
+\[
+	(b-c)x^2+(c-a)x+(a-b)=0
+\]
+\begin{gather*}
+	b = a + d  \\
+	c = a + 2d
+\end{gather*}
+\begin{gather*}
+	(a+d-a-2d)x^2+(a+2d-a)x+(a-a-d) = 0 \\
+	\begin{aligned}
+		-dx^2+2dx-d  & = 0 \\
+		d(-x^2+2x-1) & = 0 \\
+		d(x^2-2x+1)  & = 0
+	\end{aligned} \\
+	\begin{aligned}
+		(x^2-1) & = 0 \\
+		x       & = 1
+	\end{aligned}
+\end{gather*}
+
+\setcounter{equation}{0}
+3. Three different numbers, whose product is $125$, are $3$ consecutive terms in a geometric sequence. At the same time they are the first, third and sixth terms of an arithmetic sequence. Find these three numbers.
+\begin{gather*}
+	\begin{aligned}
+		a\cdot ar\cdot ar^2 & = 125         \\
+		a^3r^3              & = 125         \\
+		ar                  & = 5           \\
+		r                   & = \frac{5}{a}
+	\end{aligned} \\
+	\begin{align}
+		ar                        & = a + 2d    \notag                                           \\
+		ar^2                      & = a + 5d   \notag                                            \\
+		ar = 5 \Rightarrow a + 2d & = 5 \Rightarrow d = \frac{5 - a}{2}      \label{eq:qn3:line} \\
+		(ar)^2                    & = a^2 +5ad \notag                                            \\
+		a^2 + 5ad                 & = 25  \label{eq:qn3:line2}
+	\end{align} \\
+	\text{Sub Equation } \eqref{eq:qn3:line} \text{ into Equation } \eqref{eq:qn3:line2}  \\
+	\begin{aligned}
+		a^2 + \frac{25a - 5a^2}{2} & = 25     \\
+		\frac{3}{2}a^2 - \frac{25}{2}a+25 = 0 \\
+		a = 5, \text{ or } a = \frac{10}{3}
+	\end{aligned} \\
+	\begin{align}
+		\text{Equation } \eqref{eq:qn3:line2} \Rightarrow d = \frac{25-a^2}{5a}
+	\end{align} \\
+	\text{Check } a = 5,  \\
+	\begin{aligned}
+		d & = \frac{25 - 25}{25}                     \\
+		  & = 0 \;\; \text{(reject, } d = 0 \text{)}
+	\end{aligned} \\
+	\text{Check } a = \frac{10}{3}  \\
+	\begin{aligned}
+		d & = \frac{25 - \left(\frac{10}{3}\right)^2}{5\left(\frac{10}{3}\right)} \\
+		  & = \frac{5}{6}
+	\end{aligned} \\
+	\begin{aligned}
+		\text{First Term: }  & \frac{10}{3}                                                          \\
+		\text{Second Term: } & \frac{10}{3}\cdot\frac{5}{\frac{10}{3}} = 5                           \\
+		\text{Third Term: }  & \frac{10}{3}\cdot\left(\frac{5}{\frac{10}{3}}\right)^2 = \frac{15}{2}
+	\end{aligned}
+\end{gather*}
+
+\section{Integration}
+
+\subsection{Pre-University}
+
+1. Evaluate the following integrals:
+\begin{align*}
+	\text{(a)} & \displaystyle\int{\frac{1}{\sqrt{x}(1+x)}}\;dx & \text{(b)} & \displaystyle\int{x\tan(x^2)}\;dx        & \text{(c)} & \displaystyle\int{\frac{\cos(2x)}{\cos(x)}}\;dx \\[1em]
+	\text{(d)} & \displaystyle\int{\ln(x+1)}\;dx                & \text{(e)} & \displaystyle\int{\frac{1}{x^2-x+1}}\;dx & \text{(f)} & \displaystyle\int{\frac{12}{4t^2+8t-5}}\;dx
+\end{align*}
+
+\subsection{Solutions}
+
+\begin{flalign*}
+	\text{1(a)} & \displaystyle\int{\frac{1}{\sqrt{x}(1+x)}}\;dx &
+\end{flalign*}
+\begin{flalign*}
+	\text{Sub } x & = u^2                          & \\
+	dx            & = 2u\;du                       & \\
+	\frac{1}{u}dx & = 2\;du                        & \\
+	x             & = u^2 \Rightarrow \sqrt{x} = u
+\end{flalign*}
+\begin{flalign*}
+	  & 2\displaystyle\int{\frac{1}{1+u^2}}\;dx & \\
+	= & 2\arctan(u) + c                         & \\
+	= & 2\arctan(\sqrt{x}) + c
+\end{flalign*}
+
+\begin{flalign*}
+	\text{1(b)} & \displaystyle\int{x\tan(x^2)}\;dx &
+\end{flalign*}
+\begin{flalign*}
+	\text{Sub } u & = x^2    & \\
+	du            & = 2x\;dx
+\end{flalign*}
+\begin{flalign*}
+	\frac{1}{2}\displaystyle\int{\tan(u)}\;du & = \frac{1}{2}\displaystyle\int{\frac{\sin(u)}{\cos(u)}}\;du   & \\
+	                                          & = -\frac{1}{2}\displaystyle\int{\frac{-\sin(u)}{\cos(u)}}\;du & \\
+	                                          & = -\frac{1}{2}\ln|\cos(u)| + c                                & \\
+	                                          & = \frac{1}{2}\ln|\sec(x^2)| + c
+\end{flalign*}
+
+\begin{flalign*}
+	\text{1(c)} & \displaystyle\int{\frac{\cos(2x)}{\cos(x)}}\;dx     & \\
+	=           & \displaystyle\int{\frac{2\cos^2(x)-1}{\cos(x)}}\;dx & \\
+	=           & \displaystyle\int\left(2\cos(x)-\sec(x)\right)\;dx
+\end{flalign*}
+\begin{flalign*}
+	\displaystyle\int{sec(x)}\;dx & =
+	\text{Sub } u                 & = \cos(x)      & \\
+	du                            & = -\sin(u)\;dx
+\end{flalign*}
+\begin{flalign*}
+	\displaystyle\int\frac{\sin^2(x)}{\cos(x)}\;dx & = -\displaystyle\int\frac{\sin^2(x)}{\cos(x)}\;du
+\end{flalign*}
+
+\begin{flalign*}
+	\text{1(d)} & \displaystyle\int{\ln(x+1)}\;dx &
+\end{flalign*}
+\begin{flalign*}
+	\text{Sub } u & = x + 1 & \\
+	du            & = dx
+\end{flalign*}
+\begin{flalign*}
+	\displaystyle\int{\ln(u)}\;du & = u\ln(u) - \displaystyle\int{1}\;du & \\
+	                              & = u\ln(u) - u                        & \\
+	                              & = (x+1)\ln(x+1) - (x + 1) + c        & \\
+	                              & = (x+1)\ln(x+1) - x + c
+\end{flalign*}
+
+\end{document}

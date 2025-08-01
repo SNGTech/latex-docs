@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath, amssymb, amsthm}
+\usepackage{amsmath, amssymb, amsthm, cancel}
 \usepackage{hyperref}
 
 \usepackage[letterpaper, top=0.8in, bottom=1in, left=1in, right=1in, heightrounded]{geometry}
@@ -407,5 +407,30 @@ The \textbf{ratio test} determines the convergence of a series if the limit of t
 Generally, the ratio test is most useful when dealing with series with powers or factorial.
 
 \subsubsection{Root Test}
+
+The \textbf{root test} determines the convergence of a series if the root of the sequence which forms a ratio, shrinks fast enough.
+
+\textbf{Definition.} For a given series $\displaystyle\sum_{n=1}^{\infty}a_n$,
+\begin{gather*}
+	\displaystyle\lim_{n\rightarrow\infty}\sqrt[n]{a_n} = L   \\
+	\begin{aligned}
+		L < 1 & \Rightarrow \displaystyle\sum_{n=1}^{\infty}a_n \text{ converges absolutely} \\
+		L > 1 & \Rightarrow \displaystyle\sum_{n=1}^{\infty}a_n \text{ diverges}             \\
+		L = 1 & \Rightarrow \text{inconclusive}                                              \\
+	\end{aligned}
+\end{gather*}
+
+\textbf{Example 4.8.} Determine the convergence of the series $\displaystyle\sum_{n=1}^{\infty}\left(\frac{3n+1}{2n}\right)^n$.
+\begin{gather*}
+	a_n = {\frac{3n+1}{2n}}^n   \\
+	\begin{aligned}
+    \displaystyle\lim_{n\rightarrow\infty}\sqrt[n]{a_n} & = \displaystyle\lim_{n\rightarrow\infty}\sqrt[\uproot{15} n]{\left(\frac{3n+1}{2n}\right)^n}                                                                   \\
+                                                        & = \displaystyle\lim_{n\rightarrow\infty}\frac{3n+1}{2n} \\
+                                                        & = \frac{3}{2}
+	\end{aligned} \\
+	\therefore \text{By the root test, the series is divergent.}
+\end{gather*}
+
+Generally, the root test is most useful when dealing with series with powers of $n$.
 
 \end{document}
